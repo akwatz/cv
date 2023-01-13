@@ -1,0 +1,244 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Aman}{Wats}{Back End Software Engineer}{\contactline{{}{}}{\href{https://www.github.com/akwatz}{akwatz}}{\href{https://www.linkedin.com//in/akwatz}{akwatz}}{\href{mailto:aman.wats@outlook.com}{aman.wats@outlook.com}}{\href{tel:+91-9748766871}{+91-9748766871}}}
+
+% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Walmart Global Tech}
+\descript{| Backend Developer}
+\location{Nov 2021 – Current | Bangalore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Worked on \textbf{designing a system} where Walmart would be providing \textbf{Shipping as Service} to the partners using Walmart Marketplace.
+\item Found and resolved a production issue where partners were exploiting sync apis. Placed throttling limit on partner basis for sync apis, while providing alternative solution.
+\item Worked on migration of existing inventory service from VM based environment to Container based environment.
+\item Did end to end validation for the API gateway migration.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Samsung Research Institute Bangalore}
+\descript{| Full Stack Developer }
+\location{June 2019 – November 2021 | Bangalore, India}
+\begin{tightemize}
+\sectionsep
+\item Worked on creation of plugin using \textbf{JavaScript} and \textbf{Node.js} for \textbf{SmartThings} app which allowed consumers to use the \textbf{phone keyboard} to interact with the \textbf{TV}.
+\item Worked on providing a visual representation to the customers to see their usage pattern and device statistics in a graphical format using \textbf{Chart.js}.
+\item Migrated monitoring server to \textbf{Prometheus} based system.
+\item Created process auto-fix bundle to solve process crashes while peak traffic using \textbf{Python} with boto3 module.
+\item Created CI/CD deployment pipeline using \textbf{Spinnaker} which drastically reduced deployment time from 8hrs to 45 minutes.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Samsung Research Institute Bangalore}
+\descript{| Software Trainee }
+\location{May 2018 – July 2018 | Bangalore, India}
+\begin{tightemize}
+\sectionsep
+\item Created Book Management System for the POC of Distibuted SQL Database (CockroachDB) and deployed it on AWS.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Personal Projects}
+
+\runsubsection{Amazon Clone}
+\descript{| React.js, Node.js, Express.js, Firebase}
+\location{2021}
+\begin{tightemize}
+\item Created fully functional Amazon Clone having Cart features, view and manage Orders with \textbf{React.js} and \textbf{React Context API}.
+\item Implemented \textbf{Login/Authentication} features using \textbf{firebase} and deployed it on the firebase.
+\item Implemented payment features using stripe API.
+\item Deployed backend using firebase functions, \textbf{express} and \textbf{node.js}, used \textbf{firestore} for database.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Fake News Detector}
+\descript{| Python, NLTK}
+\location{2018}
+\begin{tightemize}
+\item Verifying text-hypothesis pairs based on shallow NLP features using Python and NLTK library. 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\sectionsep
+C++ \textbullet{} C \textbullet{} JavaScript \textbullet{} Java
+\sectionsep
+\subsection{Libraries/Frameworks}
+\sectionsep
+React.js \textbullet{} Node.js \textbullet{} Springboot \\
+\sectionsep
+\sectionsep
+\subsection{Tools/Platforms}
+\sectionsep
+Git \textbullet{} MySQL \textbullet{} CockroachDB  \textbullet{} Prometheus  \textbullet{} AWS \textbullet{} Postman\\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Jadavpur University}
+\descript{BE(Hons) Information Technology}
+\location{July 2015 - May 2019 | Kolkata, India}
+\location{ Cum. GPA: 8.25 / 10.0 }
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     REFERENCES
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{REFERENCES} 
+% \href{https://www.linkedin.com/company/john-doe/}{\textbf{John Doe}, Senior Software Developer, Tyrell Corp}
+% \begingroup
+% \setbox0=\hbox{
+% \includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} john.doe@email.com
+% }
+% \parbox{\wd0}{\box0}
+% \endgroup
+% \begingroup
+% \setbox0=\hbox{
+% \includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
+% }
+% \parbox{\wd0}{\box0}\endgroup
+% \\
+% \sectionsep
+% \href{https://www.linkedin.com/company/john-doe/}{\textbf{Jane Doe}}, Senior Software Developer, Primatech 
+% \\
+% \begingroup
+% \setbox0=\hbox{
+% \includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} jane.doe@email.com
+% }
+% \parbox{\wd0}{\box0}
+% \endgroup
+% \begingroup
+% \setbox0=\hbox{
+% \includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
+% }
+% \parbox{\wd0}{\box0}\endgroup
+% \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+
+Data Structure \& Algorithms \textbullet{}\\
+Object Oriented Programming \textbullet{}\\
+Database Management Systems \textbullet{}\\
+Distributed Systems \textbullet{}\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{ACHIEVEMENTS} 
+\sectionsep
+Secured AIR 7289 among 700K candidates in JEE 2015\\
+\sectionsep
+\sectionsep
+Secured AIR 432 among 300K candidates in WBJEE 2015\\
+\sectionsep
+\sectionsep
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
